@@ -1,0 +1,33 @@
+ <div class="accordion" id="accordionUsState">
+  <div class="card" >
+    <div class="card-header" id="headingStateOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseStateOne" aria-expanded="true" aria-controls="collapseStateOne">
+          State<i id="toggleId" class="material-icons float-right" onclick="toggleMaker()">keyboard_arrow_down</i>
+        </button>
+      </h2>
+    </div>
+    <div id="collapseStateOne" class="collapse w-100" aria-labelledby="headingStateOne" data-parent="#accordionUsState">
+      <div class="card-body">
+        <div include-html="/assets/html/state/state.html"></div>                               
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingStateTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseStateTwo" aria-expanded="false" aria-controls="collapseStateTwo">
+          State<i class="material-icons float-right">expand_more</i>
+        </button>
+      </h2>
+    </div>
+    <div id="collapseStateTwo" class="collapse" aria-labelledby="headingStateTwo" data-parent="#accordionUsState">
+      <div class="card-body">
+        <div include-html="/assets/html/state/state.html"></div>                               
+      </div>
+    </div>
+  </div>
+ 
+</div>
+
+              
