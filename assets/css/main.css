@@ -206,7 +206,7 @@ section {
 # Header
 --------------------------------------------------------------*/
 .header {
-  padding: 15px 0;
+  padding: 15px;
   transition: all 0.5s;
   z-index: 997;
 }
@@ -214,10 +214,7 @@ section {
   background: var(--color-white);
   box-shadow: 0px 2px 20px rgba(var(--color-primary-light-rgb), 0.9);
 }
-.header .logo img {
-  max-height: 40px;
-  margin-right: 6px;
-}
+
 .header .logo h1 {
   font-size: 32px;
   font-weight: 300;
@@ -541,15 +538,15 @@ section {
   color: #714926;
   float: right;
   margin-top:   100px;
-  transform: rotate(3deg);
+  transform: rotate(-1deg);
   /* Safari */
-  -webkit-transform: rotate(3deg);
+  -webkit-transform: rotate(-1deg);
   /* Firefox */
-  -moz-transform: rotate(3deg);
+  -moz-transform: rotate(-1deg);
   /* IE */
-  -ms-transform: rotate(3deg);
+  -ms-transform: rotate(-1deg);
   /* Opera */
-  -o-transform: rotate(3deg);
+  -o-transform: rotate(-1deg);
 }
 @media screen and (max-width: 820px) {
   .intro-top h1{
@@ -639,15 +636,15 @@ section {
   overflow:initial;   
   color: rgba(var(--color-black-rgb), .4);
 
-  transform: rotate(3deg);
+  transform: rotate(-1deg);
 /* Safari */
--webkit-transform: rotate(3deg);
+-webkit-transform: rotate(-1deg);
 /* Firefox */
--moz-transform: rotate(3deg);
+-moz-transform: rotate(-1deg);
 /* IE */
--ms-transform: rotate(3deg);
+-ms-transform: rotate(-1deg);
 /* Opera */
--o-transform: rotate(3deg);
+-o-transform: rotate(-1deg);
 }
 .cta .content .cta-btn {
   font-size: 20px;
@@ -713,6 +710,7 @@ section {
     font-size: 1.5rem;
   }
 }
+
 @media (max-width: 1300px) {
   .cta .content h3{
    font-size: 1.5rem;
@@ -818,9 +816,21 @@ section {
   line-height: .75;
   color: #51C24C;
   padding-top: 4rem;
+  letter-spacing: -2px;
+
   position: relative;
 
 }
+.download .hope2{
+  font-size: 9rem;
+  font-weight: 800;
+  line-height: .75;
+  letter-spacing: -.15rem;
+  position: relative;
+  color:#e275d9;
+  top: 20px;
+}
+
 .download .rotate{
   transform: rotate(15deg);
   /* Safari */
@@ -909,6 +919,12 @@ section {
     padding-bottom: 60px;
   
   }
+  .download .hope2{
+    font-size: 60px;
+    font-weight:600;
+ 
+}
+
 }
 @media (max-width: 768px) {
     .download{
@@ -921,7 +937,8 @@ section {
   .download h3 {
     font-size: 1rem;
   }
-  .download h2{font-size: 2rem;}
+  .download h2{font-size: 2rem;
+  margin-top:40px;}
   .download .hope{
     font-size: 50px;
     line-height: .75;
@@ -1392,7 +1409,7 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 .contact .php-email-form input[type=text], .contact .php-email-form input[type=email], .contact .php-email-form textarea {
-  border-radius: 0px;
+  border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
@@ -1401,11 +1418,21 @@ section {
 }
 .contact .php-email-form input[type=text], .contact .php-email-form input[type=email] {
   height: 48px;
+  width: 300px;
   padding: 10px 15px;
+  border: 2px;
+  border-color: rgba(var(--color-primary-dark-rgb), 0.9);
+  border-style: solid;
+  border-radius: 5px;
 }
 .contact .php-email-form textarea {
   padding: 10px 12px;
   height: 290px;
+  width: 350px;
+  border: 2px;
+  border-color: rgba(var(--color-primary-dark-rgb), 0.9);
+  border-style: solid;
+  border-radius: 5px;
 }
 .contact .php-email-form button[type=submit] {
   background: var(--color-primary);
@@ -1457,6 +1484,17 @@ section {
   -ms-transform: rotate(-2deg);
   /* Opera */
   -o-transform: rotate(-2deg);
+}
+.footer .footer-content .rotate2{
+  transform: rotate(4deg);
+  /* Safari */
+  -webkit-transform: rotate(4deg);
+  /* Firefox */
+  -moz-transform: rotate(4deg);
+  /* IE */
+  -ms-transform: rotate(4deg);
+  /* Opera */
+  -o-transform: rotate(4deg);
 }
 .footer .footer-content {
   background: var(--color-secondary);
@@ -1575,6 +1613,7 @@ section {
   padding: 30px 30px;
   margin: 0;
   background: var(--color-secondary-dark);
+  width: 100%;
 }
 .footer .footer-legal .credits {
   font-family: var(--font-primary);
